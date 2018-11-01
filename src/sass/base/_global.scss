@@ -1,0 +1,41 @@
+html, body {
+    // box model
+    width: 100%;
+}
+
+html {
+    // box model
+    box-sizing: border-box;
+    
+    // typography
+    font-size: $baseFontSize;
+
+    @include atMinMobile {
+        font-size: $fontForSmallMobile;
+    }
+
+    // visual
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+body {
+    // positioning
+    position: relative;
+    
+    // box model
+    min-width: 320px;
+    margin: 0;
+
+    // visual
+    background-color: $mainColor;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+*,
+*::before,
+*::after{
+    // box model
+    box-sizing: inherit;
+}

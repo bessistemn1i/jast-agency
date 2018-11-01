@@ -1,0 +1,41 @@
+@mixin atMinMobile {
+    @media(max-width: 374px) {
+        @content;
+    }
+
+}
+@mixin atTablet {
+    @media(min-width: 600px){
+        @content;
+    }
+}
+
+@mixin atDesktopS {
+    @media(min-width: 1000px) {
+        @content;
+    }
+}
+
+@mixin atDesktopM {
+    @media(min-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin atDesktopL {
+    @media(min-width: 1500px) {
+        @content;
+    }
+}
+
+@mixin atFullHD {
+    @media(min-width: 1900px) {
+        @content;
+    }
+}
+
+@mixin atUltraHD {
+    @media (min-width: 2540px) {
+        @content;
+    }
+}
