@@ -1,0 +1,44 @@
+{
+    "name": "just-agency",
+    "version": "1.0.0",
+    "description": "just agency code",
+    "main": " ",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/bessistemn1i/just-agency.git"
+    },
+    "author": "Eduard Zhulega",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/bessistemn1i/just-agency/issues"
+    },
+    "homepage": "https://github.com/bessistemn1i/just-agency#readme",
+    "devDependencies": {
+        "babel": "^6.23.0",
+        "babel-core": "^6.26.3",
+        "babel-loader": "^7.1.5",
+        "babel-preset-env": "^1.7.0",
+        "babel-register": "^6.26.0",
+        "browser-sync": "^2.23.6",
+        "gulp": "^3.9.1",
+        "gulp-cheerio": "^0.6.3",
+        "gulp-notify": "^3.2.0",
+        "gulp-pug": "^4.0.1",
+        "gulp-rename": "^1.4.0",
+        "gulp-replace": "^1.0.0",
+        "gulp-sass": "^3.2.0",
+        "gulp-svg-sprites": "^4.1.2",
+        "gulp-svgmin": "^2.1.0",
+        "gulp-watch": "^5.0.1",
+        "sass-module-importer": "^1.4.0",
+        "uglifyjs-webpack-plugin": "^1.3.0",
+        "webpack": "^4.17.1",
+        "webpack-stream": "^4.0.3"
+    },
+    "dependencies": {
+        "gumshoejs": "github:cferdinandi/gumshoe"
+    }
+}
