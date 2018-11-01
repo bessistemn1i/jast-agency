@@ -39,6 +39,6 @@
         "webpack-stream": "^4.0.3"
     },
     "dependencies": {
-        "gumshoejs": "github:cferdinandi/gumshoe"
+        "normalize.css": "^8.0.0"
     }
 }
