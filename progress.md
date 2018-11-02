@@ -2,9 +2,9 @@
 |-----------------|------------------|:------:|:---:|:---:|:----:|
 | Index           | index.pug        |   ✔️  |  ❌ | ❌ |  ❌  |
 | About           | about.pug        |   ✔️  |  ❌ | ❌ |  ❌  |
-| Contacts        | contacts.pug     |   ❌  |  ❌ | ❌ |  ❌  |
-| Projects        | projects.pug     |   ❌  |  ❌ | ❌ |  ❌  |
-| Project         | project.pug      |   ❌  |  ❌ | ❌ |  ❌  |
+| Contacts        | contacts.pug     |   ✔️  |  ❌ | ❌ |  ❌  |
+| Projects        | projects.pug     |   ✔️  |  ❌ | ❌ |  ❌  |
+| Project         | project.pug      |   ✔️  |  ❌ | ❌ |  ❌  |
 
 
 ✔️ - complete
