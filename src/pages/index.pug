@@ -8,4 +8,23 @@ html(lang="ru")
 
         title Just Agency
     body
-        h1 Test of mine
+        header.main-header
+            .main-header__nav
+                .main-header__logo
+                    a.logo(href="#") Some Logo
+                h1.main-header__slogan Hi, we are <span class="main-header__slogan-stress">JAST</span> holding.
+                .main-nav__mobile-icon
+                    .mobile-icon__line.mobile-icon__line-top
+                    .mobile-icon__line.mobile-icon__line-middle
+                    .mobile-icon__line.mobile-icon__line-bottom
+
+                .main-menu.main-menu--home
+                    ul.main-menu__list
+                        li.main-menu__item
+                            a.main-menu__link(href="#") 01 About us
+                        li.main-menu__item
+                            a.main-menu__link(href="#") 02 Our projects
+                        li.main-menu__item
+                            a.main-menu__link(href="#") 03 Partners
+                        li.main-menu__item
+                            a.main-menu__link(href="#") 04 Contact Us
