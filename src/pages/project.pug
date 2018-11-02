@@ -1,0 +1,47 @@
+<!doctype html>
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Jast Agency
+    body
+        header.header
+            .header__nav
+                .header__logo
+                    a.logo(href="#") Some Logo
+                h1.header__slogan Our Projects
+                a.header__main-site(href="#") main-site
+                .main-nav__mobile-icon
+                    .mobile-icon__line.mobile-icon__line-top
+                    .mobile-icon__line.mobile-icon__line-middle
+                    .mobile-icon__line.mobile-icon__line-bottom
+
+                .main-menu.main-menu--home
+                    ul.main-menu__list
+                        li.main-menu__item
+                            a.main-menu__link(href="about.html") 01 About us
+                        li.main-menu__item
+                            a.main-menu__link(href="projects.html") 02 Our projects
+                        li.main-menu__item
+                            a.main-menu__link(href="partners.html") 03 Partners
+                        li.main-menu__item
+                            a.main-menu__link(href="contacs.html") 04 Contact Us
+
+            button.header__close-btn +
+
+        main.main
+            .main__breadcrumbs
+                a(href="/index.html").breadcrumbs__breadcrumb Home
+                a(href="/projects.html").breadcrumbs__breadcrumb Our projects
+                a(href="/projects/project.html").breadcrumbs__breadcrumb.breadcrumbs__breadcrumb--active Jast Agency
+                
+            .main__content
+                article.project-content
+                        p.project-content__text Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi consequuntur ad voluptas fuga odio amet cupiditate non. Necessitatibus vero unde laboriosam accusantium recusandae.
+                        p.project-content__text Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi consequuntur ad voluptas fuga odio amet cupiditate non. Necessitatibus vero unde laboriosam accusantium recusandae.
+                        p.project-content__text Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi consequuntur ad voluptas fuga odio amet cupiditate non. Necessitatibus vero unde laboriosam accusantium recusandae.
+                        p.project-content__text Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi consequuntur ad voluptas fuga odio amet cupiditate non. Necessitatibus vero unde laboriosam accusantium recusandae.
+
+                        .project-content__more
+                            button.btn-more more
