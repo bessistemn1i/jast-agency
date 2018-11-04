@@ -1,0 +1,36 @@
+.nav {
+
+}
+
+.nav__logo {
+    // positioning
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+
+    // box model
+    width: 280px;
+    margin-left: -140px;
+}
+
+.nav__slogan {
+    // box model
+    margin: 0;
+
+    // typography
+    font-family: $baseFont;
+    font-size: 3rem;
+    color: #ffffff;
+}
+.nav__slogan-stress {
+    // typography
+    text-transform: capitalize;
+}
+
+.nav__mobile-icon {
+    // positioning
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    z-index: 100;
+}

@@ -1,0 +1,46 @@
+.mobile-icon {
+    // box model
+    width: 32px;
+    height: 24px;
+
+    // visual
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &--active {
+        .mobile-icon__line-one {
+            // visual
+            transform: translateY(10px) rotate(-135deg);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .mobile-icon__line-two {
+            // visual
+            opacity: 0;
+            transition: 0.4s ease;
+        }
+
+        .mobile-icon__line-three {
+            // visual
+            transform: translateY(-10px) rotate(-45deg);
+            transition: all 0.3s ease-in-out;
+        }
+    }
+
+    @include atTablet {
+        // box model
+        display: none;
+    }
+}
+
+.mobile-icon__line {
+    // box model
+    display: block;
+    width: 32px;
+    height: 3px;
+    margin: 7px 0;
+
+    // visual
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+}
