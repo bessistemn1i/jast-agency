@@ -25,6 +25,11 @@
             transform: translateY(-10px) rotate(-45deg);
             transition: all 0.3s ease-in-out;
         }
+
+        .mobile-icon__line--reverse {
+            // visual
+            background-color: #ffffff;
+        }
     }
 
     @include atTablet {
@@ -43,4 +48,9 @@
     // visual
     background-color: #fff;
     transition: all 0.3s ease-in-out;
+
+    &--reverse {
+        // visual
+        background-color: #000000;
+    }
 }

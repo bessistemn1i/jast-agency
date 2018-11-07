@@ -1,0 +1,41 @@
+.breadcrumbs {
+    // box model
+    margin-bottom: 38px;
+}
+
+.breadcrumbs__breadcrumb {
+    // box model
+    display: inline-block;
+    vertical-align: top;
+
+    // typography
+    font-family: $baseFont;
+    font-size: 0.75rem;
+    text-decoration: none;
+    color: #cccccc;
+
+    &:after {
+        content: '-';
+
+        // box model
+        margin: 0 3px;
+    }
+
+    &:last-child {
+        &::after {
+            content: none;
+        }
+    }
+
+    &:nth-last-child(2) {
+        &:after {
+            content: '-';
+            color: #000000;
+            font-weight: 500;
+        }
+    }
+    &--active {
+        // typography
+        color: $brandColor;
+    }
+}

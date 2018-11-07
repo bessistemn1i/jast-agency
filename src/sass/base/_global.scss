@@ -19,7 +19,7 @@ html {
     overflow-y: auto;
 }
 
-body {
+body.main-vis {
     // positioning
     position: relative;
     
@@ -31,6 +31,10 @@ body {
     overflow-x: hidden;
     overflow-y: auto;
     background-color: $baseColor;
+
+    &--index {
+        background-color: $brandColor;
+    }
 }
 
 *,

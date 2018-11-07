@@ -1,0 +1,43 @@
+.main {
+    // box model
+    margin: 0 50px;
+}
+
+.main__content {
+    
+}
+
+.main__content-header {
+    
+}
+
+.main__content-title {
+    // box model
+    margin: 0;
+    margin-bottom: 50px;
+
+    // typography
+    font-family: $baseFont;
+    font-size: 3.25rem;
+}
+
+.main__content-site {
+    // box model
+    display: block;
+    width: 100%;
+    max-width: 218px;
+    padding-top: 6px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 35px;
+
+    // typography
+    font-family: $baseFont;
+    font-size: 0.75rem;
+    text-align: center;
+    color: $brandColor;
+
+    // visual
+    border: 1px solid $brandColor;
+}

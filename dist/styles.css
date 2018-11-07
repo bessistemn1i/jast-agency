@@ -327,13 +327,15 @@ html {
     html {
       font-size: 16px; } }
 
-body {
+body.main-vis {
   position: relative;
   min-width: 320px;
   margin: 0;
   overflow-x: hidden;
   overflow-y: auto;
-  background-color: #4559f5; }
+  background-color: #ffffff; }
+  body.main-vis--index {
+    background-color: #4256f5; }
 
 *,
 *::before,
@@ -354,6 +356,8 @@ body {
   .mobile-icon--active .mobile-icon__line-bottom {
     transform: translateY(-10px) rotate(-45deg);
     transition: all 0.3s ease-in-out; }
+  .mobile-icon--active .mobile-icon__line--reverse {
+    background-color: #ffffff; }
   @media (min-width: 600px) {
     .mobile-icon {
       display: none; } }
@@ -365,6 +369,8 @@ body {
   margin: 7px 0;
   background-color: #fff;
   transition: all 0.3s ease-in-out; }
+  .mobile-icon__line--reverse {
+    background-color: #000000; }
 
 .nav__content {
   padding-top: 70px; }
@@ -557,3 +563,69 @@ body {
 .logo__img {
   display: block;
   width: 100%; }
+
+.header {
+  padding-top: 55px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 50px; }
+
+.header__logo {
+  width: 100%;
+  max-width: 40px; }
+
+.header__close-btn {
+  display: none; }
+
+.breadcrumbs {
+  margin-bottom: 38px; }
+
+.breadcrumbs__breadcrumb {
+  display: inline-block;
+  vertical-align: top;
+  font-family: "Open Sans";
+  font-size: 0.75rem;
+  text-decoration: none;
+  color: #cccccc; }
+  .breadcrumbs__breadcrumb:after {
+    content: '-';
+    margin: 0 3px; }
+  .breadcrumbs__breadcrumb:last-child::after {
+    content: none; }
+  .breadcrumbs__breadcrumb:nth-last-child(2):after {
+    content: '-';
+    color: #000000;
+    font-weight: 500; }
+  .breadcrumbs__breadcrumb--active {
+    color: #4256f5; }
+
+.main {
+  margin: 0 50px; }
+
+.main__content-title {
+  margin: 0;
+  margin-bottom: 50px;
+  font-family: "Open Sans";
+  font-size: 3.25rem; }
+
+.main__content-site {
+  display: block;
+  width: 100%;
+  max-width: 218px;
+  padding-top: 6px;
+  padding-bottom: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-bottom: 35px;
+  font-family: "Open Sans";
+  font-size: 0.75rem;
+  text-align: center;
+  color: #4256f5;
+  border: 1px solid #4256f5; }
+
+.project-content__text {
+  font-family: "Open Sans";
+  color: #4256f5; }
+
+.project-content__more {
+  display: none; }
