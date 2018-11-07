@@ -13,8 +13,8 @@
     padding-top: 95px;
 
     // typography
-    text-align: right;
     color: #ffffff;
+    text-align: right;
 
     // visual
     background-color: #000000;
@@ -24,17 +24,17 @@
         position: absolute;
         top: auto;
         right: auto;
-        bottom: 0;
+        bottom: 70px;
         
         // box model
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: auto;
+        max-width: 100%;
         height: auto;
         margin: 0;
-        padding: 17px 0;
-        max-width: 100%;
+        padding: 0;
 
         // visual
         background-color: transparent;
@@ -69,20 +69,21 @@
 
         // box model
         width: auto;
-        height: auto;
         max-width: 100%;
+        height: auto;
     }
 }
 
 .main-menu__list {
     // box model
-    margin: 0;
-    padding: 0;
-    padding-bottom: 30px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 30px;
+    
     // typography
     text-align: center;
 
@@ -92,6 +93,7 @@
     @include atTablet {
         // box model
         flex-direction: row;
+        padding: 0;
     }
 
     @include atDesktopS {
@@ -102,15 +104,20 @@
 
 .main-menu__item {
     // box model
+    width: 100%;
     margin: 12px 0;
     padding: 0;
-    width: 100%;
 
     @include atTablet {
         // box model
         display: inline-block;
-        margin: 0 20px;
         width: auto;
+        margin: 0 20px;
+
+        &:first-child {
+            // box model
+            margin-left: 0;
+        }
 
         &:nth-child(2) {
             // box model
@@ -121,6 +128,11 @@
     @include atDesktopS {
         // box model
         margin: 20px 0;
+
+        &:nth-child(2) {
+            // box model
+            margin-right: 0;
+        }
     }
 }
 
@@ -128,18 +140,18 @@
     // box model
     display: flex;
     align-items: center;
-    padding: 10px 0;
     max-width: 150px;
     margin-left: auto;
     margin-right: auto;
+    padding: 10px 0;
 
     // typography
     color: #ffffff;
     font-family: $baseFont;
     font-size: 1rem;
     font-weight: 400;
-    text-decoration: none;
     text-align: left;
+    text-decoration: none;
 
     // visual
     transition: all 0.3s ease-in-out;
@@ -147,8 +159,8 @@
     @include atTablet {
         // box model
         display: block;
-        padding: 0 9px;
         max-width: 100%;
+        padding: 0 9px;
 
         // typography
         font-size: 0.75rem;

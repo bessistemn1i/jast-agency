@@ -1,13 +1,26 @@
 .main-header {
     // positioning
     position: relative;
-    
+
     // box model
+    max-width: 1280px;
     margin: 0 50px;
     height: 100vh;
+
+    @include atTablet {
+        // box model
+        margin: 0 80px;
+    }
 
     @include atDesktopS {
         // box model
         margin: 0 40px;
+    }
+
+    @include atDesktopM {
+        // box model
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 40px;
     }
 }

@@ -6,25 +6,28 @@
 .nav__logo {
     // positioning
     position: absolute;
-    left: 50%;
-    bottom: 30px;
-    top: 50px;
+    top: 135px;
+    left: 0;
     z-index: -1;
 
     // box model
     width: 100%;
     max-width: 280px;
-    margin-left: -140px;
 
     @include atTablet {
         // positioning
-        left: auto;
-        right: 0;
         top: 222px;
+        left: auto;
+        right: -55px;
         
         // box model
         max-width: 480px;
         margin-left: auto;
+    }
+
+    @include atDesktopS {
+        // positioning
+        top: 65px;
     }
 }
 
@@ -33,9 +36,9 @@
     margin: 0;
 
     // typography
+    color: #ffffff;
     font-family: $baseFont;
     font-size: 3rem;
-    color: #ffffff;
 
     @include atTablet {
         // box model
@@ -46,7 +49,16 @@
             display: none;
         }
     }
+
+    @include atDesktopS {
+        // box model
+        max-width: 450px;
+
+        // typography
+        font-size: 3.8rem;
+    }
 }
+
 .nav__slogan-stress {
     // typography
     text-transform: capitalize;
