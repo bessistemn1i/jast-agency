@@ -1,5 +1,6 @@
-.nav {
-
+.nav__content {
+    // box model
+    margin-top: 70px;
 }
 
 .nav__logo {
@@ -7,10 +8,24 @@
     position: absolute;
     left: 50%;
     bottom: 30px;
+    top: 50px;
+    z-index: -1;
 
     // box model
-    width: 280px;
+    width: 100%;
+    max-width: 280px;
     margin-left: -140px;
+
+    @include atTablet {
+        // positioning
+        left: auto;
+        right: 0;
+        top: 222px;
+        
+        // box model
+        max-width: 480px;
+        margin-left: auto;
+    }
 }
 
 .nav__slogan {
@@ -21,6 +36,16 @@
     font-family: $baseFont;
     font-size: 3rem;
     color: #ffffff;
+
+    @include atTablet {
+        // box model
+        max-width: 390px;
+
+        br {
+            // box model
+            display: none;
+        }
+    }
 }
 .nav__slogan-stress {
     // typography
@@ -30,7 +55,7 @@
 .nav__mobile-icon {
     // positioning
     position: fixed;
-    top: 25px;
-    right: 25px;
+    top: 50px;
+    right: 50px;
     z-index: 100;
 }

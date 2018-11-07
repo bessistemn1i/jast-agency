@@ -10,24 +10,28 @@ html(lang="ru")
     body
         header.main-header
             nav.nav
-                .nav__logo
-                    a.logo(href="index.html") Some Logo
-                h1.nav__slogan Hi,<br> we are <span class="nav__slogan-stress">JAST</span> holding.
-                .nav__mobile-icon
-                    .mobile-icon
-                        .mobile-icon__line.mobile-icon__line-top
-                        .mobile-icon__line.mobile-icon__line-middle
-                        .mobile-icon__line.mobile-icon__line-bottom
+                .nav__content
+                    .nav__logo
+                        a.logo(href="index.html")
+                            img.logo__img(src="https://via.placeholder.com/800x800.png?text=Logo", alt="")
+                    
+                    h1.nav__slogan Hi,<br> we are <span class="nav__slogan-stress">JAST</span> holding.
+                    
+                    .nav__mobile-icon
+                        .mobile-icon
+                            .mobile-icon__line.mobile-icon__line-top
+                            .mobile-icon__line.mobile-icon__line-middle
+                            .mobile-icon__line.mobile-icon__line-bottom
 
-                .main-menu.main-menu--home
-                    ul.main-menu__list
-                        li.main-menu__item
-                            a.main-menu__link(href="about.html") <span class="main-menu__link-numb">01</span> About us
-                        li.main-menu__item
-                            a.main-menu__link(href="projects.html") <span class="main-menu__link-numb">02</span> Our projects
-                        li.main-menu__item
-                            a.main-menu__link(href="partners.html") <span class="main-menu__link-numb">03</span> Partners
-                        li.main-menu__item
-                            a.main-menu__link(href="contacts.html") <span class="main-menu__link-numb">04</span> Contact Us
+                    .main-menu.main-menu--home
+                        ul.main-menu__list
+                            li.main-menu__item
+                                a.main-menu__link(href="about.html") <span class="main-menu__link-numb">01</span> About us
+                            li.main-menu__item
+                                a.main-menu__link(href="projects.html") <span class="main-menu__link-numb">02</span> Our projects
+                            li.main-menu__item
+                                a.main-menu__link(href="partners.html") <span class="main-menu__link-numb">03</span> Partners
+                            li.main-menu__item
+                                a.main-menu__link(href="contacts.html") <span class="main-menu__link-numb">04</span> Contact Us
 
         script(src="main.js")

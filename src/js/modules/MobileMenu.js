@@ -4,7 +4,7 @@ class MobileMenu {
     }
 
     events() {
-        let menuIcon = document.querySelector('.nav__mobile-icon'),
+        let menuIcon = document.querySelector('.mobile-icon'),
             mobileMenu = document.querySelector('.main-menu'),
             menuLinks = document.querySelectorAll('.main-menu__link');
         

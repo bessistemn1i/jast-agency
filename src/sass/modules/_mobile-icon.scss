@@ -8,19 +8,19 @@
     transition: all 0.3s ease-in-out;
 
     &--active {
-        .mobile-icon__line-one {
+        .mobile-icon__line-top {
             // visual
             transform: translateY(10px) rotate(-135deg);
             transition: all 0.3s ease-in-out;
         }
 
-        .mobile-icon__line-two {
+        .mobile-icon__line-middle {
             // visual
             opacity: 0;
             transition: 0.4s ease;
         }
 
-        .mobile-icon__line-three {
+        .mobile-icon__line-bottom {
             // visual
             transform: translateY(-10px) rotate(-45deg);
             transition: all 0.3s ease-in-out;

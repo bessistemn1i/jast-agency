@@ -11,7 +11,8 @@ const dirs = {
 gulp.task("watch", ()=> {
     browserSync.init({
         server: {
-            baseDir: "dist"
+            baseDir: "dist",
+            port: 3002
         }
     });
 
