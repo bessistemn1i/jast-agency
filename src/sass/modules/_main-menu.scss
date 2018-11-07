@@ -93,6 +93,11 @@
         // box model
         flex-direction: row;
     }
+
+    @include atDesktopS {
+        // box model
+        flex-direction: column;
+    }
 }
 
 .main-menu__item {
@@ -111,6 +116,11 @@
             // box model
             margin-right: 45px;
         }
+    }
+
+    @include atDesktopS {
+        // box model
+        margin: 20px 0;
     }
 }
 

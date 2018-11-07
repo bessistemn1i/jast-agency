@@ -367,7 +367,7 @@ body {
   transition: all 0.3s ease-in-out; }
 
 .nav__content {
-  margin-top: 70px; }
+  padding-top: 70px; }
 
 .nav__logo {
   position: absolute;
@@ -409,7 +409,10 @@ body {
 .main-header {
   position: relative;
   margin: 0 50px;
-  height: 101vh; }
+  height: 100vh; }
+  @media (min-width: 1000px) {
+    .main-header {
+      margin: 0 40px; } }
 
 .main-menu {
   position: fixed;
@@ -477,6 +480,9 @@ body {
   @media (min-width: 600px) {
     .main-menu__list {
       flex-direction: row; } }
+  @media (min-width: 1000px) {
+    .main-menu__list {
+      flex-direction: column; } }
 
 .main-menu__item {
   margin: 12px 0;
@@ -489,6 +495,9 @@ body {
       width: auto; }
       .main-menu__item:nth-child(2) {
         margin-right: 45px; } }
+  @media (min-width: 1000px) {
+    .main-menu__item {
+      margin: 20px 0; } }
 
 .main-menu__link {
   display: flex;
