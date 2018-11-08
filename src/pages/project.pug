@@ -8,46 +8,48 @@ html(lang="ru")
         
         title Jast Agency
     body.main-vis
-        header.header
-            nav.nav
-                .header__logo
-                    a.logo(href="index.html") Some Logo
-                .nav__mobile-icon
-                    .mobile-icon
-                        .mobile-icon__line.mobile-icon__line--reverse.mobile-icon__line-top
-                        .mobile-icon__line.mobile-icon__line--reverse.mobile-icon__line-middle
-                        .mobile-icon__line.mobile-icon__line--reverse.mobile-icon__line-bottom
+        .container
+            header.header
+                nav.nav
+                    .header__logo
+                        a.logo(href="index.html") Some Logo
+                    .nav__mobile-icon
+                        .mobile-icon
+                            .mobile-icon__line.mobile-icon__line--reverse.mobile-icon__line-top
+                            .mobile-icon__line.mobile-icon__line--reverse.mobile-icon__line-middle
+                            .mobile-icon__line.mobile-icon__line--reverse.mobile-icon__line-bottom
 
-                .main-menu.main-menu--home
-                    ul.main-menu__list
-                        li.main-menu__item
-                            a.main-menu__link(href="about.html") 01 About us
-                        li.main-menu__item
-                            a.main-menu__link(href="projects.html") 02 Our projects
-                        li.main-menu__item
-                            a.main-menu__link(href="partners.html") 03 Partners
-                        li.main-menu__item
-                            a.main-menu__link(href="contacts.html") 04 Contact Us
+                button.header__close-btn +
 
-            button.header__close-btn +
+            main.main
+                .breadcrumbs
+                    a(href="/index.html").breadcrumbs__breadcrumb Home
+                    a(href="/projects.html").breadcrumbs__breadcrumb Our projects
+                    a(href="/projects/project.html").breadcrumbs__breadcrumb.breadcrumbs__breadcrumb--active Jast Agency
+                    
+                .main__content
+                    header.main__content-header
+                        h1.main__content-title Jast<br>agency
+                        a.main__content-site(href="www.jast-agency.com") www.jast-agency.com
+                    
+                    article.project-content
+                            p.project-content__text Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi consequuntur ad voluptas fuga odio amet cupiditate non. Necessitatibus vero unde laboriosam accusantium recusandae.
+                            p.project-content__text Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi consequuntur ad voluptas fuga odio amet cupiditate non. Necessitatibus vero unde laboriosam accusantium recusandae.
+                            p.project-content__text Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi consequuntur ad voluptas fuga odio amet cupiditate non. Necessitatibus vero unde laboriosam accusantium recusandae.
+                            p.project-content__text Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi consequuntur ad voluptas fuga odio amet cupiditate non. Necessitatibus vero unde laboriosam accusantium recusandae.
 
-        main.main
-            .breadcrumbs
-                a(href="/index.html").breadcrumbs__breadcrumb Home
-                a(href="/projects.html").breadcrumbs__breadcrumb Our projects
-                a(href="/projects/project.html").breadcrumbs__breadcrumb.breadcrumbs__breadcrumb--active Jast Agency
+                            .project-content__more
+                                button.btn-more more
                 
-            .main__content
-                header.main__content-header
-                    h1.main__content-title Jast<br>agency
-                    a.main__content-site(href="www.jast-agency.com") www.jast-agency.com
-                
-                article.project-content
-                        p.project-content__text Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi consequuntur ad voluptas fuga odio amet cupiditate non. Necessitatibus vero unde laboriosam accusantium recusandae.
-                        p.project-content__text Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi consequuntur ad voluptas fuga odio amet cupiditate non. Necessitatibus vero unde laboriosam accusantium recusandae.
-                        p.project-content__text Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi consequuntur ad voluptas fuga odio amet cupiditate non. Necessitatibus vero unde laboriosam accusantium recusandae.
-                        p.project-content__text Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi consequuntur ad voluptas fuga odio amet cupiditate non. Necessitatibus vero unde laboriosam accusantium recusandae.
+                .main-menu.main-menu--bottom
+                        ul.main-menu__list
+                            li.main-menu__item
+                                a.main-menu__link(href="about.html") <span class="main-menu__link-numb">01</span> About us
+                            li.main-menu__item
+                                a.main-menu__link.main-menu__link--active(href="projects.html") <span class="main-menu__link-numb">02</span> Our projects
+                            li.main-menu__item
+                                a.main-menu__link(href="partners.html") <span class="main-menu__link-numb">03</span> Partners
+                            li.main-menu__item
+                                a.main-menu__link(href="contacts.html") <span class="main-menu__link-numb">04</span> Contact Us
 
-                        .project-content__more
-                            button.btn-more more
         script(src="main.js")

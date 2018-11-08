@@ -1,5 +1,9 @@
 .project-content {
-
+    @include atDesktopS {
+        // box model
+        float: right;
+        max-width: 530px;
+    }
 }
 
 .project-content__text {

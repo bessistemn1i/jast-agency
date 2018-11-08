@@ -41,6 +41,25 @@
         opacity: 1;
         visibility: visible;
     }
+
+    @include atDesktopS {
+        // positioning
+        top: 0;
+    }
+}
+
+.main-menu--bottom {
+    @include atTablet {
+        // positioning
+        position: relative;
+        top: auto;
+        right: auto;
+        bottom: auto;
+        left: auto;
+
+        // typography
+        color: #000000;
+    }
 }
 
 .main-menu--active {
@@ -62,7 +81,7 @@
 
     @include atTablet {
         // positioning
-        position: absolute;
+        position: relative;
         top: auto;
         right: auto;
         bottom: 0;
@@ -71,6 +90,11 @@
         width: auto;
         max-width: 100%;
         height: auto;
+    }
+
+    @include atDesktopS {
+        // positioning
+        top: 0;
     }
 }
 
@@ -146,7 +170,7 @@
     padding: 10px 0;
 
     // typography
-    color: #ffffff;
+    color: inherit;
     font-family: $baseFont;
     font-size: 1rem;
     font-weight: 400;
@@ -160,10 +184,31 @@
         // box model
         display: block;
         max-width: 100%;
-        padding: 0 9px;
+        //padding: 0 9px;
 
         // typography
         font-size: 0.75rem;
+
+        // visual
+        transition: width 0.3s ease-in-out;
+
+        &--active {
+            // typography
+            color: $brandColor;
+
+            &:after {
+                content: '';
+
+                // box model
+                display: block;
+                width: 100%;
+                height: 2px;
+                margin-top: 3px;
+
+                // visual
+                background-color: $brandColor;
+            }
+        }
     }
 }
 
@@ -181,6 +226,6 @@
         // box model
         display: block;
         margin-right: 0;
-        margin-bottom: 15px;
+        margin-bottom: 12px;
     }
 }

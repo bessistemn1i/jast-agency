@@ -8,7 +8,10 @@
 }
 
 .main__content-header {
-    
+    @include atDesktopS {
+        // box model
+        display: inline-block;
+    }
 }
 
 .main__content-title {
